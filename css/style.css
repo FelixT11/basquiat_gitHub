@@ -1,0 +1,686 @@
+/* Reset
+--------- */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* general styles 
+------------------- */
+
+* {
+	box-sizing: border-box;
+}
+
+nav:before, nav:after, form:before, form:after, section:before, section:after {
+    
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Grid Layout
+------------------------*/
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"]{
+    
+    float: left;
+    padding: 15px;
+}
+
+
+/* Main Layout
+------------------------*/
+
+/* Index Layout
+------------------------*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.aboutLink {
+    display: none;
+}
+
+.portfolioLink {
+    display: none;
+}
+
+.menu-on, .menu-off, #toggle-menu{
+    
+    display: none;
+}
+
+title {
+    font-family: 'Sedgwick Ave Display', cursive; 
+}
+
+.bg1 {
+    position: relative;
+    background-image: url("../images/crown.jpg");
+    min-height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.artistName {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    padding: 20px 0; 
+    text-align: center;
+    background-color: #edd801;
+}
+
+.artistName span a {
+    font-family: 'Sedgwick Ave Display', cursive;
+    letter-spacing: 5px;
+    font-size: 40px;
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.4s ease-in;
+}
+
+.artistName span a:hover {
+    color: #e5521b;
+    transition: all 0.4s ease-in;
+}
+
+.navLeft {
+    float: left;
+}
+
+.navRight {
+    float: right;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+    z-index: 1000;
+}
+
+u {
+    text-decoration: none;
+    transition: all 0.4s ease-in;
+}
+
+u:hover {
+    text-decoration: none;
+    color: #e5521b;
+    transition: all 0.4s ease-in;
+}
+
+li a:first-child {
+    padding-left: 40px;
+}
+
+li a:last-child {
+    padding-right: 40px;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: #edd801;
+}
+
+/* About Layout
+------------------------*/
+
+
+.bg2 {
+    position: relative;
+    background-image: url("../images/jean_michel_basquiat_1.jpg");
+    min-height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.synopsis, .earlyYears, .commercialSuccess, .personalProblems, .quote {
+    color: #777;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 80px 20%;
+    text-align: justify;
+}
+
+h2 {
+    padding-bottom: 35px;
+    text-align: center;
+    font-family: 'Sedgwick Ave Display', cursive;
+    letter-spacing: 5px;
+    font-size: 35px;
+}
+
+.text {
+    font-family: 'Nobile', sans-serif;
+    line-height: 25px;
+}
+
+.img1 {
+    position: relative;
+    background-image: url("../images/jean_michel_basquiat_boxer.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img2 {
+    position: relative;
+    background-image: url("../images/jean_michel_basquiat_andy_warhol.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img3 {
+    position: relative;
+    background-image: url("../images/jean_michel_basquiat_2.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img4 {
+    position: relative;
+    background-image: url("../images/jean_michel_basquiat_3.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* Portfolio Layout
+------------------------*/
+
+.bg3 {
+    position: relative;
+    background-image: url("../images/art1.jpg");
+    min-height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.artGallery {
+    padding: 0;
+    padding-top: 40px;
+}
+
+.gallery{
+    padding-top: 30px;
+    padding-bottom: 100px;
+/*    background-color: #f7f5ed;*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*
+main section div a img{
+    
+    filter: grayscale(1);
+}
+
+
+main section div a img:hover{
+    
+    filter: grayscale(0);
+    transition: all 500ms ease-in 500ms;
+}
+*/
+
+
+
+.gallery div {
+    padding: 30px 30px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.img5 {
+    position: relative;
+    background-image: url("../images/bg1.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Nobile', sans-serif;
+    font-size: 35px;
+}
+
+.img6 {
+    position: relative;
+    background-image: url("../images/bg2.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* Contact Layout
+------------------------*/
+
+.bg4 {
+    position: relative;
+    background-image: url("../images/contact1.jpg");
+    min-height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img7 {
+    position: relative;
+    background-image: url("../images/contact2.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form, .socialMedia, .contactUs{
+    color: #777777;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 80px 20%;
+    text-align: justify;
+}
+
+form h2 {
+    padding: 0;
+}
+
+.formLeft {
+    float: left;
+    width: 50%;
+    padding: 5%;
+}
+
+.formRight {
+    float: right;
+    width: 50%;
+    padding: 5%;
+}
+
+.formLeft p, .formRight p {
+    font-family: 'Nobile', sans-serif;
+    line-height: 10px;
+    font-size: 18px;
+}
+
+input[type=text] {
+    font-family: 'Nobile', sans-serif;
+    font-size: 18px;
+    width: 100%;
+    height: 30px;
+    display: inline-block;
+    border: solid 1px #777777;
+}
+
+textarea {
+    font-family: 'Nobile', sans-serif;
+    font-size: 18px;
+    height: 108px;
+    width: 100%;
+    display: inline-block;
+    border: solid 1px #777777;
+}
+
+input[type=submit] {
+    margin-top: 20px;
+    font-family: 'Nobile', sans-serif;
+    font-size: 18px;
+    color: #777777;
+    margin-left: 30%;
+    background-color: #3ec367;
+    padding: 10px;
+    border: none;
+    width: 40%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.img8 {
+    position: relative;
+    background-image: url("../images/contact3.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img9 {
+    position: relative;
+    background-image: url("../images/contact4.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.socialMediaLink a {
+    cursor: default;
+}
+
+.list {
+    width: 100%;
+    text-align: center;
+    cursor: default;
+}
+
+.socialMediaLink a i {
+    cursor: pointer;
+    color: #777777;
+    font-size: 40px;
+}
+
+.fa-instagram:hover {
+    color: #802c9f;
+}
+
+.fa-facebook:hover {
+    color: #2c479f;
+}
+
+.fa-pinterest:hover {
+    color: #9f2c2c;
+}
+
+.fa-twitter:hover {
+    color: #2c8d9f;
+}
+
+.img10 {
+    position: relative;
+    background-image: url("../images/contact5.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* Blog Layout
+------------------------*/
+
+.bg5 {
+    position: relative;
+    background-image: url("../images/bg3.jpg");
+    min-height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.blog{
+    color: #777777;
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 80px;
+    text-align: justify;
+    position: relative;
+}
+
+.blog h2 {
+    margin-bottom: 30px;
+}
+
+.blogText {
+/*
+    position: relative;
+    z-index: 1;
+*/
+    padding: 0 5%;
+    margin: 0;
+/*    width: 80%;*/
+    line-height: 25px;
+/*    margin-top: -20px;*/
+/*    float: right;*/
+}
+
+.sideBar {
+
+/*    float: left;*/
+}
+
+.line {
+    border: dashed 1px #ffffff;
+
+   
+}
+
+.main-menu:hover .line {
+     border: dashed 1px #c6c6c6;
+}
+
+.fa {
+/*display: table-cell;*/
+width: 60px;
+height: 36px;
+text-align: center;
+/*vertical-align: middle;*/
+font-size:20px;
+    margin-bottom: 10px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+transition: all 0.7s ease-out;
+}
+
+.main-menu {
+/*
+z-index: 10;
+position: absolute;
+*/
+background: #ffffff;
+/*border-right:solid 1px #ccba03;*/
+padding: 20px 0;
+/*height:100%;*/
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+/*
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+*/
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+font-family: 'Titillium Web', sans-serif;
+}
+/*
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+*/
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+transition: all 0.7s ease-out;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+transition: all 0.7s ease-out;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}

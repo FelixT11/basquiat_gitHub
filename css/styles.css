@@ -1,0 +1,809 @@
+/* Reset
+--------- */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* general styles 
+------------------- */
+
+* {
+	box-sizing: border-box;
+}
+
+nav:before, nav:after, form:before, form:after, section:before, section:after, .content:before, content:after {
+    
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Grid Layout
+------------------------*/
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"]{
+    
+    float: left;
+    padding: 15px;
+}
+
+
+/* Main Layout
+------------------------*/
+
+/* Burger Menu 
+------------------------*/
+
+
+.burger {
+    padding-top: 25px;
+}
+
+/* Index Layout
+------------------------*/
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.aboutLink {
+    display: none;
+}
+
+.portfolioLink {
+    display: none;
+}
+
+.menu-on,
+.menu-off,
+#toggle-menu {
+    display: none;
+}
+
+title {
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.bg1 {
+    position: relative;
+    background-image: url("/wp-content/uploads/2017/10/crown.jpg");
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.artistName {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #edd801;
+}
+
+.artistName span a {
+    font-family: 'Sedgwick Ave Display', cursive;
+    letter-spacing: 5px;
+    font-size: 40px;
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+    right: 12%;
+    top: 15px;
+}
+
+.artistName a:hover {
+    color: #e5521b;
+    transition: all 0.8s ease-in;
+}
+
+.navLeft {
+    float: left;
+}
+
+.navLeft ul li a {
+    top: 20px;
+}
+
+.navRight {
+    float: right;
+}
+
+.navRight ul li a {
+    top: -20px;
+}
+
+.navRight li {
+    display: inline-block;
+}
+
+.navLeft li {
+    display: inline-block;
+}
+
+.navRight li a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+    z-index: 2;
+}
+
+.navLeft li a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+    z-index: 2;
+}
+
+li a:hover {
+    color: #e5521b;
+}
+
+.navLeft li a:first-child {
+    padding-left: 40px;
+}
+
+.navRight li a:first-child {
+    padding-left: 40px;
+}
+
+.navLeft li a:last-child {
+    padding-right: 40px;
+}
+
+.navRight li a:last-child {
+    padding-right: 40px;
+}
+
+.footer {
+    height: 50px;
+    width: 100%;
+    background-color: #edd801;
+}
+
+footer {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* About Layout
+------------------------*/
+
+.bg2 {
+    position: relative;
+    background-image: url('../images/jean_michel_basquiat_1.jpg');
+/*    background-image: url("/wp-content/uploads/2017/10/jean_michel_basquiat_1.jpg");*/
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.synopsis,
+.earlyYears,
+.commercialSuccess,
+.personalProblems,
+.quote {
+    color: #777777;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 80px 20%;
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Sedgwick Ave Display', cursive;
+    letter-spacing: 5px;
+    font-size: 35px;
+}
+
+.text {
+    font-family: 'Nobile', sans-serif;
+    line-height: 25px;
+}
+
+.img1 {
+    position: relative;    
+    background-image: url('../images/jean_michel_basquiat_boxer.jpg');
+/*    background-image: url("/wp-content/uploads/2017/10/jean_michel_basquiat_boxer.jpg");*/
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img2 {
+    position: relative;
+    background-image: url('../images/jean_michel_basquiat_andy_warhol.jpg');
+/*    background-image: url("/wp-content/uploads/2017/10/jean_michel_basquiat_andy_warhol.jpg");*/
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img3 {
+    position: relative;
+    background-image: url('../images/jean_michel_basquiat_2.jpg');
+/*    background-image: url("/wp-content/uploads/2017/10/jean_michel_basquiat_2.jpg");*/
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img4 {
+    position: relative;
+    background-image: url('../images/jean_michel_basquiat_3.jpg');
+/*    background-image: url("/wp-content/uploads/2017/10/jean_michel_basquiat_3.jpg");*/
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Portfolio Layout
+------------------------*/
+
+.bwg_image_description,
+.bwg_image_title {
+    font-family: 'Nobile', sans-serif !important;
+}
+
+.bwg_image_info {
+    background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.bwg_standart_thumb_0 {
+    padding: 10px;
+}
+
+.bwg_standart_thumb_1 {
+    padding: 10px;
+}
+
+.portfolio {
+    color: #777777;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.portfolio h2 {
+    padding-bottom: 20px;
+}
+
+.twoJGalleryCSSwrap {
+    display: none;
+}
+
+.block {
+    padding-bottom: 20px;
+}
+
+.bg3 {
+    position: relative;
+    background-image: url('../images/art1.jpg');
+/*    background-image: url("/wp-content/uploads/2017/10/art1.jpg");*/
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.artGallery {
+    padding: 20px 0;
+    padding-top: 40px;
+    color: #777777;
+}
+
+.gallery {
+    padding-top: 30px;
+    padding-bottom: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gallery div {
+    padding: 30px 30px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.img5 {
+    position: relative;
+    background-image: url('../images/bg1.jpg');
+/*    background-image: url("/wp-content/uploads/2017/10/bg1.jpg");*/
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Nobile', sans-serif;
+    font-size: 35px;
+}
+
+.img6 {
+    position: relative;
+    background-image: url('../images/bg2.jpg');
+/*    background-image: url("/wp-content/uploads/2017/10/bg2.jpg");*/
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Contact Layout
+------------------------*/
+
+.bg4 {
+    position: relative;
+    background-image: url('../images/contact1.jpg');
+/*    background-image: url("/wp-content/uploads/2017/10/contact1.jpg");*/
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img7 {
+    position: relative;
+    background-image: url('../images/contact2.jpg');
+/*    background-image: url("/wp-content/uploads/2017/10/contact2.jpg");*/
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contactForm,
+.socialMedia,
+.contactUs {
+    color: #777777;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 80px 20%;
+    text-align: justify;
+}
+
+.contactUs p {
+    font-family: 'Nobile', sans-serif;
+    line-height: 25px;
+}
+
+.contactForm h2 {
+    padding: 0;
+}
+
+.formLeft {
+    float: left;
+    width: 50%;
+    padding: 5%;
+}
+
+.formRight {
+    float: right;
+    width: 50%;
+    padding: 5%;
+}
+
+.formLeft p,
+.formRight p {
+    font-family: 'Nobile', sans-serif;
+    line-height: 10px;
+    font-size: 18px;
+}
+
+.wpforms-field {
+    font-family: 'Nobile', sans-serif !important;
+    font-size: 18px !important;
+}
+
+.textarea {
+    font-family: 'Nobile', sans-serif;
+    font-size: 18px;
+    height: 108px;
+    width: 100%;
+    display: inline-block;
+    border: solid 1px #777777;
+}
+
+.wpforms-submit {
+    margin-top: 20px !important;
+    font-family: 'Nobile', sans-serif !important;
+    font-size: 18px !important;
+    color: #777777 !important;
+    margin-left: 30% !important;
+    background-color: #3ec367 !important;
+    padding: 10px !important;
+    border: none !important;
+    width: 40% !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+}
+
+.img8 {
+    position: relative;
+    background-image: url('../images/contact3.jpg');
+/*    background-image: url("/wp-content/uploads/2017/10/contact3.jpg");*/
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img9 {
+    position: relative;
+    background-image: url('../images/04-michael-halsband.w1200.h630.jpg');
+/*    background-image: url("/wp-content/uploads/2017/10/04-michael-halsband.w1200.h630.jpg");*/
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.socialMediaLink {
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+.socialMediaLink a {
+    cursor: default;
+}
+
+.list {
+    padding-top: 35px;
+    width: 100%;
+    text-align: center;
+    cursor: default;
+}
+
+.socialMediaLink a i {
+    cursor: pointer;
+    color: #777777;
+    font-size: 40px;
+}
+
+.fa-instagram:hover {
+    color: #8a3ab9;
+    transition: all 0.8s ease-in;
+}
+
+.fa-facebook:hover {
+    color: #3B5998;
+    transition: all 0.8s ease-in;
+}
+
+.fa-pinterest:hover {
+    color: #C92228;
+    transition: all 0.8s ease-in;
+}
+
+.fa-twitter:hover {
+    color: #1dcaff;
+    transition: all 0.8s ease-in;
+}
+
+.img10 {
+    position: relative;
+    background-image: url('../images/contact5.jpg');
+/*    background-image: url("/wp-content/uploads/2017/10/contact5.jpg");*/
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Blog Layout
+------------------------*/
+
+.burgerMenu {
+    font-size: 30px;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    left: 30px;
+}
+
+.bg5 {
+    position: relative;
+    background-image: url("../images/bg3.jpg");
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog {
+    width: 100%;
+}
+
+.blog h2 {
+    margin-bottom: 30px;
+}
+
+.blogArticle {
+    min-height: 500px;
+}
+
+.sidebar {
+    height: 100%;
+    background-color: aquamarine;
+    width: 250px;
+}
+
+.blogMain {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    box-flex: 1;
+}
+
+.blogText {
+    padding-bottom: 80px;
+    padding-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.blogTitle {
+    font-family: 'Sedgwick Ave Display';
+    color: #000000;
+    font-size: 30px;
+}
+
+.blogContainer {
+    padding: 30px;
+}
+
+
+.content {
+    color: #777777;
+    font-family: 'Nobile', sans-serif;
+    line-height: 25px;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Nobile', sans-serif;
+    font-weight: 500; 
+}
+
+
+.read-more:hover {
+    color: #e5521b;
+    transition: all 0.8s ease-in;
+}
+
+.sidebarTitle {
+    cursor: default;
+    padding-left: 30px;
+    font-family: 'Sedgwick Ave Display';
+    color: #000000;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.widgetContainer {
+    padding: 50px 0;
+    height: 100%;
+}
+
+.widgetContainer ul li a {
+    line-height: 35px;
+}
+
+.widgetContainer ul li a:hover {
+    color: #e5521b;
+    transition: all 0.8s ease-in;
+}
+
+
+/* Single Post Layout
+------------------------*/
+
+.singlePost {
+    color: #777777;
+    font-family: 'Nobile', sans-serif;
+    line-height: 25px;
+    padding: 0 30px;
+}
+
+.authorName,
+.publishingDate {
+    color: #777777;
+    font-size: 16px;
+    font-family: 'Nobile', sans-serif;
+    padding: 0 30px;
+}
+
+
+/* Sidebar Layout
+------------------------*/
+
+/* The side navigation menu */
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1000;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #edd801;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 5px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #777777;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #f1f1f1;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+
+
+
+
+/* Post Layout
+------------------------*/
+
+.postid-106 .bg1 {
+    position: relative;
+    background-image: url('../images/jean_michel_basquiat_boxer.jpg');
+/*    background-image: url("/wp-content/uploads/2017/10/jean_michel_basquiat_boxer.jpg");*/
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
